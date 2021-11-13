@@ -14,6 +14,7 @@ find_package(Boost 1.60 REQUIRED
 add_executable(calculator
 	"src/main.cpp"
 )
+include_directories(include)
 target_link_libraries(calculator ${Boost_LIBRARIES})
 
 if(THREADS_HAVE_PTHREAD_ARG)
